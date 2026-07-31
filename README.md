@@ -7,7 +7,8 @@ their deadline, their final price.
 FastAPI + SQLite backend · plain HTML/CSS/ES-modules frontend · no build step.
 
 ```bash
-cd backend && python -m uvicorn app.main:app --reload --port 8000
+cd backend
+python -m uvicorn app.main:app --reload --port 8000
 ```
 
 Then open **http://127.0.0.1:8000** — full setup in [§5](#5-how-to-run).
@@ -332,7 +333,8 @@ python -m venv .venv
 ```
 
 ```bash
-cd backend && ..\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
+cd backend
+..\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
 ```
 
 On macOS/Linux use `.venv/bin/python` instead.
@@ -348,14 +350,16 @@ The SQLite database is **rebuilt from the JSON seed on every startup**, so the
 demo is identical on every run. To regenerate the seed itself:
 
 ```bash
-cd backend && ..\.venv\Scripts\python.exe seed\generate.py
+cd backend
+..\.venv\Scripts\python.exe seed\generate.py
 ```
 
 Product images are committed, so nothing extra is needed. To re-download them
 from scratch (requires network; takes a couple of minutes):
 
 ```bash
-cd backend && ..\.venv\Scripts\python.exe seed\fetch_images.py
+cd backend
+..\.venv\Scripts\python.exe seed\fetch_images.py
 ```
 
 ### Worth clicking
@@ -374,7 +378,8 @@ cd backend && ..\.venv\Scripts\python.exe seed\fetch_images.py
 ### Tests
 
 ```bash
-cd backend && ..\.venv\Scripts\python.exe -m pytest -q
+cd backend
+..\.venv\Scripts\python.exe -m pytest -q
 ```
 
 ---
