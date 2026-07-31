@@ -20,10 +20,7 @@ Then open **http://127.0.0.1:8000** — full setup in [§5](#5-how-to-run).
 A short walkthrough of the flow — location gate, browse filters, the confidence
 card, and the sold-out and missed-deadline recovery paths:
 
-**▶ [Watch the demo](PASTE_YOUR_DRIVE_LINK_HERE)**
-
-> _Paste the shared Google Drive link above (set to "Anyone with the link can
-> view")._
+**▶ [Watch the demo](https://drive.google.com/file/d/1UpZaHnfmdVyB_Oeyp_2qRNZwVnI9aw3j/view?usp=sharing)**
 
 ---
 
