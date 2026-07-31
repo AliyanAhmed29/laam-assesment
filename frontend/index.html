@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAAM — Where should we deliver?</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Applied before first paint; a deferred module would flash the light theme. -->
+  <script>try{var t=localStorage.getItem("laam.theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="/">LAAM</a>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
+    </div>
+  </header>
+
+  <!--
+    The location gate. Asking beats guessing (PLAN.md decision #7): it is more
+    honest than geo-IP, and it moves confidence upstream — once the city is
+    known, even the listing cards can carry real delivery information.
+
+    Skippable on purpose. Forced gates lose browsers, and the unresolved state
+    is fully built, so skipping costs nothing.
+  -->
+  <main class="gate">
+    <div class="gate__inner">
+      <h1 class="gate__title">Where should we deliver?</h1>
+      <p class="gate__why">
+        So every price and delivery date you see is real — no surprises at checkout.
+      </p>
+
+      <div class="gate__field">
+        <label class="sr-only" for="city">Delivery city or country</label>
+        <select id="city">
+          <option value="">Choose your city or country…</option>
+        </select>
+      </div>
+
+      <p id="gate-warning" class="gate__warning" hidden></p>
+
+      <div class="gate__actions">
+        <button id="continue" class="btn" disabled>Continue</button>
+        <button id="skip" class="gate__skip" type="button">Skip for now</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/js/theme.js"></script>
+  <script type="module" src="/js/landing.js"></script>
+</body>
+</html>

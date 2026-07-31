@@ -1,0 +1,13 @@
+fastapi>=0.115
+uvicorn[standard]>=0.34
+pydantic>=2.10
+email-validator>=2.2   # pydantic EmailStr, used by the restock-alert payload
+
+# Windows ships no system tz database, so stdlib `zoneinfo` cannot resolve
+# "Asia/Karachi" without this. Harmless on Linux/macOS, required on Windows —
+# and the delivery estimator is timezone-dependent by design.
+tzdata>=2024.1
+
+# tests
+pytest>=8.3
+httpx>=0.28          # required by fastapi.testclient

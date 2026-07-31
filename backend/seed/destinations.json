@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Lahore",
+    "zone": "domestic_metro",
+    "transit_days_min": 1,
+    "transit_days_max": 2,
+    "shipping_fee_pkr": 199,
+    "free_shipping_threshold_pkr": 5000,
+    "serviceable": true
+  },
+  {
+    "name": "Karachi",
+    "zone": "domestic_metro",
+    "transit_days_min": 2,
+    "transit_days_max": 3,
+    "shipping_fee_pkr": 249,
+    "free_shipping_threshold_pkr": 5000,
+    "serviceable": true
+  },
+  {
+    "name": "Islamabad",
+    "zone": "domestic_metro",
+    "transit_days_min": 2,
+    "transit_days_max": 3,
+    "shipping_fee_pkr": 249,
+    "free_shipping_threshold_pkr": 5000,
+    "serviceable": true
+  },
+  {
+    "name": "Multan",
+    "zone": "domestic_other",
+    "transit_days_min": 3,
+    "transit_days_max": 5,
+    "shipping_fee_pkr": 299,
+    "free_shipping_threshold_pkr": 5000,
+    "serviceable": true
+  },
+  {
+    "name": "Gwadar",
+    "zone": "domestic_other",
+    "transit_days_min": 0,
+    "transit_days_max": 0,
+    "shipping_fee_pkr": 0,
+    "free_shipping_threshold_pkr": 5000,
+    "serviceable": false
+  },
+  {
+    "name": "United Arab Emirates",
+    "zone": "intl_gcc",
+    "transit_days_min": 4,
+    "transit_days_max": 7,
+    "shipping_fee_pkr": 1900,
+    "free_shipping_threshold_pkr": 25000,
+    "serviceable": true
+  },
+  {
+    "name": "United Kingdom",
+    "zone": "intl_west",
+    "transit_days_min": 6,
+    "transit_days_max": 10,
+    "shipping_fee_pkr": 3500,
+    "free_shipping_threshold_pkr": 35000,
+    "serviceable": true
+  },
+  {
+    "name": "United States",
+    "zone": "intl_west",
+    "transit_days_min": 7,
+    "transit_days_max": 12,
+    "shipping_fee_pkr": 3900,
+    "free_shipping_threshold_pkr": 35000,
+    "serviceable": true
+  },
+  {
+    "name": "Canada",
+    "zone": "intl_west",
+    "transit_days_min": 8,
+    "transit_days_max": 13,
+    "shipping_fee_pkr": 4200,
+    "free_shipping_threshold_pkr": 35000,
+    "serviceable": true
+  }
+]

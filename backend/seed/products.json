@@ -1,0 +1,1305 @@
+[
+  {
+    "_comment": "Baseline pret. Size M sold out so the primary failure→recovery path (edge #2) is reachable from the very first product.",
+    "id": "noor-embroidered-lawn-3pc-teal",
+    "title": "Embroidered Lawn 3-Piece — Teal",
+    "brand": "Noor Studio",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 8900,
+    "discount_pct": 15,
+    "discount_ends_at": "2026-08-20T23:59:00",
+    "color": "Teal",
+    "fabric": "Lawn",
+    "description_short": "Teal embroidered lawn three-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.94,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 4
+      },
+      {
+        "size": "S",
+        "stock_qty": 7
+      },
+      {
+        "size": "M",
+        "stock_qty": 0
+      },
+      {
+        "size": "L",
+        "stock_qty": 2
+      },
+      {
+        "size": "XL",
+        "stock_qty": 5
+      }
+    ],
+    "image_url": "/img/products/pret-schoolgirls-in-shalwar-kameez-abbotabad-pakistan.jpg"
+  },
+  {
+    "_comment": "EDGE #3 — every size sold out. The page is blocked entirely and the alternatives rail is the only way forward.",
+    "id": "laalzari-luxury-pret-maroon",
+    "title": "Luxury Pret Kameez — Maroon",
+    "brand": "Laalzari",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 11500,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Maroon",
+    "fabric": "Silk",
+    "description_short": "Maroon silk luxury kameez",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.9,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 0
+      },
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 0
+      },
+      {
+        "size": "L",
+        "stock_qty": 0
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/pret-shalwar-kameez-colours.jpg"
+  },
+  {
+    "_comment": "EDGE #4 — low stock throughout, exercising honest scarcity ('Only 2 left') with no countdown timers or view-counters.",
+    "id": "bagh-handloom-kurta-indigo",
+    "title": "Handloom Kurta — Indigo",
+    "brand": "Bagh",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 5400,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Indigo",
+    "fabric": "Khaddar",
+    "description_short": "Indigo handloom khaddar kurta",
+    "dispatch_city": "Multan",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.85,
+    "variants": [
+      {
+        "size": "S",
+        "stock_qty": 1
+      },
+      {
+        "size": "M",
+        "stock_qty": 2
+      },
+      {
+        "size": "L",
+        "stock_qty": 3
+      },
+      {
+        "size": "XL",
+        "stock_qty": 1
+      }
+    ],
+    "image_url": "/img/products/pret-innocence.jpg"
+  },
+  {
+    "_comment": "EDGE #5 — unstitched. Free Size only, and 6 stitching days push the arrival window out. The one piece of genuine LAAM domain knowledge in the build.",
+    "id": "kohinoor-unstitched-3pc-emerald",
+    "title": "Unstitched Embroidered 3-Piece — Emerald",
+    "brand": "Kohinoor Pret",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 6800,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-08-15T23:59:00",
+    "color": "Emerald",
+    "fabric": "Chiffon",
+    "description_short": "Emerald unstitched chiffon three-piece",
+    "dispatch_city": "Faisalabad",
+    "dispatch_days": 2,
+    "stitching_days": 6,
+    "ships_international": true,
+    "on_time_rate": 0.89,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 25
+      }
+    ],
+    "image_url": "/img/products/unstitched-cotton-block-printed-textile-39-eyebright-39-gre.jpg"
+  },
+  {
+    "_comment": "EDGE #6 — discount expired 10 July. Must fall back to list price with NO strikethrough; a fake 'was' price is the dishonesty this build argues against.",
+    "id": "noor-formal-gharara-gold",
+    "title": "Formal Gharara Set — Gold",
+    "brand": "Noor Studio",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 32000,
+    "discount_pct": 25,
+    "discount_ends_at": "2026-07-10T23:59:00",
+    "color": "Gold",
+    "fabric": "Jamawar",
+    "description_short": "Gold jamawar formal gharara",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.87,
+    "variants": [
+      {
+        "size": "S",
+        "stock_qty": 2
+      },
+      {
+        "size": "M",
+        "stock_qty": 3
+      },
+      {
+        "size": "L",
+        "stock_qty": 1
+      }
+    ],
+    "image_url": "/img/products/formals-golden-wedding-lehenga.jpg"
+  },
+  {
+    "_comment": "EDGE #8 — brand ships domestically only. Must yield a reason distinct from an unserviceable city, because the recovery differs: here we can offer brands that DO ship abroad.",
+    "id": "meher-bridal-lehnga-crimson",
+    "title": "Bridal Lehnga — Crimson",
+    "brand": "Meher",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 145000,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Crimson",
+    "fabric": "Velvet",
+    "description_short": "Crimson velvet bridal lehnga",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 5,
+    "stitching_days": 0,
+    "ships_international": false,
+    "on_time_rate": 0.82,
+    "variants": [
+      {
+        "size": "S",
+        "stock_qty": 1
+      },
+      {
+        "size": "M",
+        "stock_qty": 1
+      },
+      {
+        "size": "L",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/formals-chattissgarh-lehenga.jpg"
+  },
+  {
+    "_comment": "Western wear with S and M sold out, so the failure path is reachable outside eastern categories too. NOTE: this was originally intended to demo the empty rail (edge #11), but the generated filler below supplies enough western pieces that alternatives now exist — which is the correct outcome. Edge #11 is instead exercised by an unreachable arrive_by deadline (e.g. Canada by 10 Aug), where no product in the catalogue can pass the hard filter.",
+    "id": "zaria-west-co-ord-charcoal",
+    "title": "Co-ord Set — Charcoal",
+    "brand": "Zaria",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 13800,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Charcoal",
+    "fabric": "Linen",
+    "description_short": "Charcoal linen co-ord set",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.92,
+    "variants": [
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 0
+      },
+      {
+        "size": "L",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/west-linen-dress-with-reverse-applique.jpg"
+  },
+  {
+    "_comment": "EDGE #19 — Rs 4,800 subtotal sits just under the Rs 5,000 free-delivery threshold, so the 'add Rs 200 for free delivery' hint has something real to report.",
+    "id": "sarosh-cotton-kurta-mustard",
+    "title": "Cotton Kurta — Mustard",
+    "brand": "Sarosh",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 4800,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Mustard",
+    "fabric": "Cotton",
+    "description_short": "Mustard cotton everyday kurta",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 1,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.95,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 6
+      },
+      {
+        "size": "S",
+        "stock_qty": 8
+      },
+      {
+        "size": "M",
+        "stock_qty": 10
+      },
+      {
+        "size": "L",
+        "stock_qty": 4
+      },
+      {
+        "size": "XL",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/pret-bandhani-kurta-for-women.jpg"
+  },
+  {
+    "id": "noor-studio-lawn-3-piece-ivory",
+    "title": "Lawn 3-Piece — Ivory",
+    "brand": "Noor Studio",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 7200,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Ivory",
+    "fabric": "Lawn",
+    "description_short": "Ivory lawn lawn 3-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.94,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 6
+      },
+      {
+        "size": "S",
+        "stock_qty": 9
+      },
+      {
+        "size": "M",
+        "stock_qty": 12
+      },
+      {
+        "size": "L",
+        "stock_qty": 7
+      },
+      {
+        "size": "XL",
+        "stock_qty": 3
+      }
+    ],
+    "image_url": "/img/products/pret-chungking-mansions.jpg"
+  },
+  {
+    "id": "meher-lawn-3-piece-rose",
+    "title": "Lawn 3-Piece — Rose",
+    "brand": "Meher",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 8100,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Rose",
+    "fabric": "Lawn",
+    "description_short": "Rose lawn lawn 3-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 1,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.97,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 0
+      },
+      {
+        "size": "S",
+        "stock_qty": 5
+      },
+      {
+        "size": "M",
+        "stock_qty": 8
+      },
+      {
+        "size": "L",
+        "stock_qty": 3
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/pret-101124-a-1987k-141.jpg"
+  },
+  {
+    "id": "aab-lawn-3-piece-sage",
+    "title": "Lawn 3-Piece — Sage",
+    "brand": "Aab",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 9000,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Sage",
+    "fabric": "Lawn",
+    "description_short": "Sage lawn lawn 3-piece",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.91,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 2
+      },
+      {
+        "size": "S",
+        "stock_qty": 2
+      },
+      {
+        "size": "M",
+        "stock_qty": 4
+      },
+      {
+        "size": "L",
+        "stock_qty": 1
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/pret-top-25-salwar-suit-neck-designs-to-admire-salwar.jpg"
+  },
+  {
+    "id": "zaria-cotton-kurta-navy",
+    "title": "Cotton Kurta — Navy",
+    "brand": "Zaria",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 5480,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Navy",
+    "fabric": "Cotton",
+    "description_short": "Navy cotton cotton kurta",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.88,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 0
+      },
+      {
+        "size": "S",
+        "stock_qty": 5
+      },
+      {
+        "size": "M",
+        "stock_qty": 8
+      },
+      {
+        "size": "L",
+        "stock_qty": 3
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/pret-in-my-salwar-suit.jpg"
+  },
+  {
+    "id": "laalzari-cotton-kurta-black",
+    "title": "Cotton Kurta — Black",
+    "brand": "Laalzari",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 6380,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Black",
+    "fabric": "Cotton",
+    "description_short": "Black cotton cotton kurta",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.9,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 2
+      },
+      {
+        "size": "S",
+        "stock_qty": 2
+      },
+      {
+        "size": "M",
+        "stock_qty": 4
+      },
+      {
+        "size": "L",
+        "stock_qty": 1
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/pret-schoolgirls-in-shalwar-kameez-abbotabad-pakistan.jpg"
+  },
+  {
+    "id": "bagh-cotton-kurta-blush",
+    "title": "Cotton Kurta — Blush",
+    "brand": "Bagh",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 7280,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Blush",
+    "fabric": "Cotton",
+    "description_short": "Blush cotton cotton kurta",
+    "dispatch_city": "Multan",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.85,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 11
+      },
+      {
+        "size": "S",
+        "stock_qty": 14
+      },
+      {
+        "size": "M",
+        "stock_qty": 16
+      },
+      {
+        "size": "L",
+        "stock_qty": 9
+      },
+      {
+        "size": "XL",
+        "stock_qty": 6
+      }
+    ],
+    "image_url": "/img/products/pret-shalwar-kameez-colours.jpg"
+  },
+  {
+    "id": "kohinoor-pret-khaddar-suit-olive",
+    "title": "Khaddar Suit — Olive",
+    "brand": "Kohinoor Pret",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 6160,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Olive",
+    "fabric": "Khaddar",
+    "description_short": "Olive khaddar khaddar suit",
+    "dispatch_city": "Faisalabad",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.89,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 2
+      },
+      {
+        "size": "S",
+        "stock_qty": 2
+      },
+      {
+        "size": "M",
+        "stock_qty": 4
+      },
+      {
+        "size": "L",
+        "stock_qty": 1
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/pret-innocence.jpg"
+  },
+  {
+    "id": "sarosh-khaddar-suit-rust",
+    "title": "Khaddar Suit — Rust",
+    "brand": "Sarosh",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 7060,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Rust",
+    "fabric": "Khaddar",
+    "description_short": "Rust khaddar khaddar suit",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 1,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.93,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 11
+      },
+      {
+        "size": "S",
+        "stock_qty": 14
+      },
+      {
+        "size": "M",
+        "stock_qty": 16
+      },
+      {
+        "size": "L",
+        "stock_qty": 9
+      },
+      {
+        "size": "XL",
+        "stock_qty": 6
+      }
+    ],
+    "image_url": "/img/products/pret-bandhani-kurta-for-women.jpg"
+  },
+  {
+    "id": "noor-studio-khaddar-suit-plum",
+    "title": "Khaddar Suit — Plum",
+    "brand": "Noor Studio",
+    "category": "pret",
+    "product_type": "ready_to_wear",
+    "price_pkr": 7960,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Plum",
+    "fabric": "Khaddar",
+    "description_short": "Plum khaddar khaddar suit",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.94,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 3
+      },
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 7
+      },
+      {
+        "size": "L",
+        "stock_qty": 5
+      },
+      {
+        "size": "XL",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/pret-chungking-mansions.jpg"
+  },
+  {
+    "id": "meher-formal-chiffon-set-ivory",
+    "title": "Formal Chiffon Set — Ivory",
+    "brand": "Meher",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 25640,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Ivory",
+    "fabric": "Chiffon",
+    "description_short": "Ivory chiffon formal chiffon set",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 1,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.97,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 11
+      },
+      {
+        "size": "S",
+        "stock_qty": 14
+      },
+      {
+        "size": "M",
+        "stock_qty": 16
+      },
+      {
+        "size": "L",
+        "stock_qty": 9
+      },
+      {
+        "size": "XL",
+        "stock_qty": 6
+      }
+    ],
+    "image_url": "/img/products/formals-sari-silk-crochet-scarf.jpg"
+  },
+  {
+    "id": "aab-formal-chiffon-set-rose",
+    "title": "Formal Chiffon Set — Rose",
+    "brand": "Aab",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 26540,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Rose",
+    "fabric": "Chiffon",
+    "description_short": "Rose chiffon formal chiffon set",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.91,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 3
+      },
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 7
+      },
+      {
+        "size": "L",
+        "stock_qty": 5
+      },
+      {
+        "size": "XL",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/formals-sari-silk-crochet-scarf-detail.jpg"
+  },
+  {
+    "id": "zaria-formal-chiffon-set-sage",
+    "title": "Formal Chiffon Set — Sage",
+    "brand": "Zaria",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 27440,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Sage",
+    "fabric": "Chiffon",
+    "description_short": "Sage chiffon formal chiffon set",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.88,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 6
+      },
+      {
+        "size": "S",
+        "stock_qty": 9
+      },
+      {
+        "size": "M",
+        "stock_qty": 12
+      },
+      {
+        "size": "L",
+        "stock_qty": 7
+      },
+      {
+        "size": "XL",
+        "stock_qty": 3
+      }
+    ],
+    "image_url": "/img/products/formals-trip-to-hyderabad.jpg"
+  },
+  {
+    "id": "laalzari-organza-formal-navy",
+    "title": "Organza Formal — Navy",
+    "brand": "Laalzari",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 33520,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Navy",
+    "fabric": "Organza",
+    "description_short": "Navy organza organza formal",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.9,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 3
+      },
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 7
+      },
+      {
+        "size": "L",
+        "stock_qty": 5
+      },
+      {
+        "size": "XL",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/formals-the-princess-5-of-52.jpg"
+  },
+  {
+    "id": "bagh-organza-formal-black",
+    "title": "Organza Formal — Black",
+    "brand": "Bagh",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 34420,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Black",
+    "fabric": "Organza",
+    "description_short": "Black organza organza formal",
+    "dispatch_city": "Multan",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.85,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 6
+      },
+      {
+        "size": "S",
+        "stock_qty": 9
+      },
+      {
+        "size": "M",
+        "stock_qty": 12
+      },
+      {
+        "size": "L",
+        "stock_qty": 7
+      },
+      {
+        "size": "XL",
+        "stock_qty": 3
+      }
+    ],
+    "image_url": "/img/products/formals-golden-wedding-lehenga.jpg"
+  },
+  {
+    "id": "kohinoor-pret-organza-formal-blush",
+    "title": "Organza Formal — Blush",
+    "brand": "Kohinoor Pret",
+    "category": "formals",
+    "product_type": "ready_to_wear",
+    "price_pkr": 35320,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Blush",
+    "fabric": "Organza",
+    "description_short": "Blush organza organza formal",
+    "dispatch_city": "Faisalabad",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.89,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 0
+      },
+      {
+        "size": "S",
+        "stock_qty": 5
+      },
+      {
+        "size": "M",
+        "stock_qty": 8
+      },
+      {
+        "size": "L",
+        "stock_qty": 3
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/formals-chattissgarh-lehenga.jpg"
+  },
+  {
+    "id": "sarosh-unstitched-lawn-3-piece-olive",
+    "title": "Unstitched Lawn 3-Piece — Olive",
+    "brand": "Sarosh",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 3600,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Olive",
+    "fabric": "Lawn",
+    "description_short": "Olive lawn unstitched lawn 3-piece",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 1,
+    "stitching_days": 5,
+    "ships_international": true,
+    "on_time_rate": 0.93,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 20
+      }
+    ],
+    "image_url": "/img/products/unstitched-man-block-printing-textiles-gouache.jpg"
+  },
+  {
+    "id": "noor-studio-unstitched-lawn-3-piece-rust",
+    "title": "Unstitched Lawn 3-Piece — Rust",
+    "brand": "Noor Studio",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 4500,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Rust",
+    "fabric": "Lawn",
+    "description_short": "Rust lawn unstitched lawn 3-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 6,
+    "ships_international": true,
+    "on_time_rate": 0.94,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 27
+      }
+    ],
+    "image_url": "/img/products/unstitched-add-some-embroidered-fabric-to-your-jacket-www-a.jpg"
+  },
+  {
+    "id": "meher-unstitched-lawn-3-piece-plum",
+    "title": "Unstitched Lawn 3-Piece — Plum",
+    "brand": "Meher",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 5400,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Plum",
+    "fabric": "Lawn",
+    "description_short": "Plum lawn unstitched lawn 3-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 1,
+    "stitching_days": 7,
+    "ships_international": true,
+    "on_time_rate": 0.97,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 34
+      }
+    ],
+    "image_url": "/img/products/unstitched-mawangdui-han-embroidered-fabric.jpg"
+  },
+  {
+    "id": "aab-unstitched-cambric-2-piece-ivory",
+    "title": "Unstitched Cambric 2-Piece — Ivory",
+    "brand": "Aab",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 3180,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Ivory",
+    "fabric": "Cambric",
+    "description_short": "Ivory cambric unstitched cambric 2-piece",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 2,
+    "stitching_days": 5,
+    "ships_international": true,
+    "on_time_rate": 0.91,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 20
+      }
+    ],
+    "image_url": "/img/products/unstitched-wool.jpg"
+  },
+  {
+    "id": "zaria-unstitched-cambric-2-piece-rose",
+    "title": "Unstitched Cambric 2-Piece — Rose",
+    "brand": "Zaria",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 4080,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Rose",
+    "fabric": "Cambric",
+    "description_short": "Rose cambric unstitched cambric 2-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 3,
+    "stitching_days": 6,
+    "ships_international": true,
+    "on_time_rate": 0.88,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 27
+      }
+    ],
+    "image_url": "/img/products/unstitched-colorful-spools-of-yarn.jpg"
+  },
+  {
+    "id": "laalzari-unstitched-cambric-2-piece-sage",
+    "title": "Unstitched Cambric 2-Piece — Sage",
+    "brand": "Laalzari",
+    "category": "unstitched",
+    "product_type": "unstitched",
+    "price_pkr": 4980,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Sage",
+    "fabric": "Cambric",
+    "description_short": "Sage cambric unstitched cambric 2-piece",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 7,
+    "ships_international": true,
+    "on_time_rate": 0.9,
+    "variants": [
+      {
+        "size": "Free Size",
+        "stock_qty": 34
+      }
+    ],
+    "image_url": "/img/products/unstitched-red-fabric-with-folds.jpg"
+  },
+  {
+    "id": "bagh-linen-shirt-dress-navy",
+    "title": "Linen Shirt Dress — Navy",
+    "brand": "Bagh",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 8960,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Navy",
+    "fabric": "Linen",
+    "description_short": "Navy linen linen shirt dress",
+    "dispatch_city": "Multan",
+    "dispatch_days": 3,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.85,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 2
+      },
+      {
+        "size": "S",
+        "stock_qty": 2
+      },
+      {
+        "size": "M",
+        "stock_qty": 4
+      },
+      {
+        "size": "L",
+        "stock_qty": 1
+      },
+      {
+        "size": "XL",
+        "stock_qty": 0
+      }
+    ],
+    "image_url": "/img/products/west-le-bel-t-robe-de-lingerie-pour-la-campagne-the-l.jpg"
+  },
+  {
+    "id": "kohinoor-pret-linen-shirt-dress-black",
+    "title": "Linen Shirt Dress — Black",
+    "brand": "Kohinoor Pret",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 9860,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Black",
+    "fabric": "Linen",
+    "description_short": "Black linen linen shirt dress",
+    "dispatch_city": "Faisalabad",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.89,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 11
+      },
+      {
+        "size": "S",
+        "stock_qty": 14
+      },
+      {
+        "size": "M",
+        "stock_qty": 16
+      },
+      {
+        "size": "L",
+        "stock_qty": 9
+      },
+      {
+        "size": "XL",
+        "stock_qty": 6
+      }
+    ],
+    "image_url": "/img/products/west-denim-jacket.jpg"
+  },
+  {
+    "id": "sarosh-linen-shirt-dress-blush",
+    "title": "Linen Shirt Dress — Blush",
+    "brand": "Sarosh",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 10760,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Blush",
+    "fabric": "Linen",
+    "description_short": "Blush linen linen shirt dress",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 1,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.93,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 3
+      },
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 7
+      },
+      {
+        "size": "L",
+        "stock_qty": 5
+      },
+      {
+        "size": "XL",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/west-levi-s-denim-jacket.jpg"
+  },
+  {
+    "id": "noor-studio-denim-jacket-olive",
+    "title": "Denim Jacket — Olive",
+    "brand": "Noor Studio",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 7240,
+    "discount_pct": 20,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Olive",
+    "fabric": "Denim",
+    "description_short": "Olive denim denim jacket",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.94,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 11
+      },
+      {
+        "size": "S",
+        "stock_qty": 14
+      },
+      {
+        "size": "M",
+        "stock_qty": 16
+      },
+      {
+        "size": "L",
+        "stock_qty": 9
+      },
+      {
+        "size": "XL",
+        "stock_qty": 6
+      }
+    ],
+    "image_url": "/img/products/west-bootstrap-blind-date-sew-along-semi-fitted-women.jpg"
+  },
+  {
+    "id": "meher-denim-jacket-rust",
+    "title": "Denim Jacket — Rust",
+    "brand": "Meher",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 8140,
+    "discount_pct": 0,
+    "discount_ends_at": null,
+    "color": "Rust",
+    "fabric": "Denim",
+    "description_short": "Rust denim denim jacket",
+    "dispatch_city": "Lahore",
+    "dispatch_days": 1,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.97,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 3
+      },
+      {
+        "size": "S",
+        "stock_qty": 0
+      },
+      {
+        "size": "M",
+        "stock_qty": 7
+      },
+      {
+        "size": "L",
+        "stock_qty": 5
+      },
+      {
+        "size": "XL",
+        "stock_qty": 2
+      }
+    ],
+    "image_url": "/img/products/west-pixelfashion-mainshop-sexy-fashion-clothes-dress.jpg"
+  },
+  {
+    "id": "aab-denim-jacket-plum",
+    "title": "Denim Jacket — Plum",
+    "brand": "Aab",
+    "category": "west",
+    "product_type": "ready_to_wear",
+    "price_pkr": 9040,
+    "discount_pct": 10,
+    "discount_ends_at": "2026-09-30T23:59:00",
+    "color": "Plum",
+    "fabric": "Denim",
+    "description_short": "Plum denim denim jacket",
+    "dispatch_city": "Karachi",
+    "dispatch_days": 2,
+    "stitching_days": 0,
+    "ships_international": true,
+    "on_time_rate": 0.91,
+    "variants": [
+      {
+        "size": "XS",
+        "stock_qty": 6
+      },
+      {
+        "size": "S",
+        "stock_qty": 9
+      },
+      {
+        "size": "M",
+        "stock_qty": 12
+      },
+      {
+        "size": "L",
+        "stock_qty": 7
+      },
+      {
+        "size": "XL",
+        "stock_qty": 3
+      }
+    ],
+    "image_url": "/img/products/west-tradition-vs-modernity.jpg"
+  }
+]

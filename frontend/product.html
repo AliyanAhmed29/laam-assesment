@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAAM — Product</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Applied before first paint; a deferred module would flash the light theme. -->
+  <script>try{var t=localStorage.getItem("laam.theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="/browse.html">LAAM</a>
+    <div class="header-right">
+      <a class="back-link" href="/browse.html">← Back to browsing</a>
+      <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
+    </div>
+  </header>
+
+  <!--
+    Every element below is a mount point written to by exactly one component
+    function. product.js owns the single render(); nothing else touches the DOM.
+  -->
+  <main class="page pdp" id="pdp" hidden>
+
+    <div id="product-tile"></div>
+
+    <div>
+      <p class="pdp__brand" id="product-brand"></p>
+      <h1 class="pdp__title" id="product-title"></h1>
+      <p class="pdp__price" id="product-price"></p>
+      <p class="pdp__meta" id="product-meta"></p>
+
+      <div class="block">
+        <h2 class="block__heading">Select a size</h2>
+        <div id="size-selector" class="sizes" role="group" aria-label="Sizes"></div>
+        <p id="size-hint" class="size-hint"></p>
+      </div>
+
+      <!--
+        The confidence card, ordered the way a person actually decides:
+        your size → arrives when → you'll pay exactly this → act.
+      -->
+      <section class="conf block" id="confidence-card" aria-live="polite">
+        <p class="loading">Checking availability…</p>
+      </section>
+    </div>
+
+    <section class="rail pdp__rail" id="alternatives-rail" hidden></section>
+  </main>
+
+  <p id="pdp-error" class="empty" hidden></p>
+
+  <script type="module" src="/js/theme.js"></script>
+  <script type="module" src="/js/product.js"></script>
+</body>
+</html>

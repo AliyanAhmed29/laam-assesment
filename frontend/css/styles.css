@@ -1,0 +1,415 @@
+/* ==========================================================================
+   LAAM — purchase confidence
+   Minimal and type-led in both themes. Colour is reserved almost entirely for
+   resolution state, so when something IS coloured it means something.
+   Mobile-first: LAAM's traffic is app- and mobile-heavy.
+
+   Theming: light is the default. Dark applies either from the OS preference or
+   from an explicit `data-theme="dark"` on <html>. The token block is written
+   twice on purpose — a media query and an attribute selector cannot be merged
+   into one rule, and duplicating six lines is cheaper than a preprocessor.
+   ========================================================================== */
+
+:root {
+  --bg:            #ffffff;
+  --surface:       #fbfaf8;
+  --border:        #e8e4dd;
+  --border-strong: #d5cfc4;
+  --text:          #1a1917;
+  --text-muted:    #6f6a61;
+  --text-faint:    #9a948a;
+
+  /* Resolution states — the visual grammar of the whole design. */
+  --confirmed:     #1c7a4a;
+  --estimated:     #8a6d1f;
+  --unresolved:    #9a948a;
+  --failed:        #b03532;
+
+  --accent:        #1a1917;
+  --accent-ink:    #ffffff;
+
+  /* Product tiles carry only a hue inline; lightness is themed here so the
+     tints stay legible in both modes. */
+  --tile-l:        93%;
+  --tile-s:        34%;
+  --tile-ink:      #4a453d;
+  --img-brightness: 1;
+
+  --radius:        8px;
+  --measure:       64ch;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:            #131211;
+    --surface:       #1b1a18;
+    --border:        #2e2c28;
+    --border-strong: #423f3a;
+    --text:          #f0ede8;
+    --text-muted:    #a49e94;
+    --text-faint:    #7d776d;
+
+    --confirmed:     #4fb383;
+    --estimated:     #d0ad60;
+    --unresolved:    #7d776d;
+    --failed:        #e0726d;
+
+    --accent:        #f0ede8;
+    --accent-ink:    #131211;
+
+    --tile-l:        16%;
+    --tile-s:        18%;
+    --tile-ink:      #c9c2b6;
+    --img-brightness: 0.86;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg:            #131211;
+  --surface:       #1b1a18;
+  --border:        #2e2c28;
+  --border-strong: #423f3a;
+  --text:          #f0ede8;
+  --text-muted:    #a49e94;
+  --text-faint:    #7d776d;
+
+  --confirmed:     #4fb383;
+  --estimated:     #d0ad60;
+  --unresolved:    #7d776d;
+  --failed:        #e0726d;
+
+  --accent:        #f0ede8;
+  --accent-ink:    #131211;
+
+  --tile-l:        16%;
+  --tile-s:        18%;
+  --tile-ink:      #c9c2b6;
+  --img-brightness: 0.86;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+a { color: inherit; }
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+/* -------------------------------------------------------------- header ---- */
+
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.wordmark {
+  font-weight: 700; font-size: 1.05rem; letter-spacing: 0.24em; text-decoration: none;
+}
+
+.header-right { display: flex; align-items: center; gap: 14px; font-size: 0.875rem; }
+.header-city { color: var(--text-muted); }
+.header-city button {
+  font: inherit; background: none; border: none; padding: 0;
+  color: var(--text); text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+
+.back-link { color: var(--text-muted); font-size: 0.875rem; text-decoration: none; }
+.back-link:hover { color: var(--text); }
+
+.theme-toggle {
+  font: inherit; font-size: 0.9rem; line-height: 1;
+  width: 34px; height: 34px; padding: 0;
+  display: grid; place-items: center;
+  border: 1px solid var(--border-strong); border-radius: 999px;
+  background: var(--bg); color: var(--text); cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--text-muted); }
+
+/* -------------------------------------------------------------- layout ---- */
+
+.page { padding: 24px 20px 64px; max-width: 1140px; margin: 0 auto; }
+
+/* ------------------------------------------------------------- landing ---- */
+
+.gate { min-height: 78vh; display: grid; place-items: center; padding: 24px; }
+.gate__inner { width: 100%; max-width: 30rem; text-align: center; }
+.gate__title { font-size: 1.6rem; margin-bottom: 10px; }
+.gate__why { color: var(--text-muted); margin: 0 auto 26px; max-width: 27rem; font-size: 0.95rem; }
+.gate__field { display: grid; gap: 10px; text-align: left; }
+.gate__actions { margin-top: 18px; display: grid; gap: 14px; justify-items: center; }
+.gate__skip {
+  background: none; border: none; font: inherit; font-size: 0.875rem;
+  color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px;
+  cursor: pointer; padding: 4px;
+}
+.gate__warning {
+  margin-top: 14px; font-size: 0.875rem; color: var(--failed);
+  border: 1px solid currentColor; border-radius: var(--radius);
+  padding: 10px 12px; text-align: left;
+}
+
+/* ------------------------------------------------------------- filters ---- */
+
+.filters {
+  display: flex; flex-wrap: wrap; gap: 18px 24px; align-items: flex-end;
+  padding-bottom: 20px; margin-bottom: 24px; border-bottom: 1px solid var(--border);
+}
+.filter { display: grid; gap: 6px; }
+.filter__label {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint);
+}
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.chip-btn {
+  font: inherit; font-size: 0.875rem; padding: 7px 13px; min-height: 38px;
+  border: 1px solid var(--border-strong); border-radius: 999px;
+  background: var(--bg); color: var(--text-muted); cursor: pointer;
+}
+.chip-btn[aria-pressed="true"] {
+  background: var(--accent); color: var(--accent-ink); border-color: var(--accent);
+}
+
+select, input[type="date"] {
+  font: inherit; font-size: 0.9375rem; padding: 9px 11px; min-height: 40px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  background: var(--bg); color: var(--text);
+}
+/* Without this the native date/select glyphs stay black on a dark field. */
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] input[type="date"] { color-scheme: dark; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) select,
+  :root:not([data-theme="light"]) input[type="date"] { color-scheme: dark; }
+}
+
+.filter__summary { width: 100%; font-size: 0.875rem; color: var(--text-muted); margin: 0; }
+.link-btn {
+  background: none; border: none; font: inherit; padding: 0; cursor: pointer;
+  color: var(--text); text-decoration: underline; text-underline-offset: 3px;
+}
+
+/* ---------------------------------------------------------------- grid ---- */
+
+.grid {
+  display: grid; gap: 22px 18px;
+  grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+}
+.card { display: block; text-decoration: none; }
+
+.card__tile {
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius); border: 1px solid var(--border);
+  display: grid; place-items: center; padding: 18px; text-align: center;
+  margin-bottom: 10px; overflow: hidden; position: relative;
+  background: hsl(var(--tile-h, 35) var(--tile-s) var(--tile-l));
+}
+.card__tile span {
+  font-size: 0.8125rem; line-height: 1.4; color: var(--tile-ink);
+  text-transform: lowercase; letter-spacing: 0.01em;
+}
+
+/* With a photograph the caption sits underneath and only shows if the <img>
+   fails to load and removes itself. The tint stays as the backdrop either way. */
+.card__tile--photo, .pdp__tile--photo { padding: 0; }
+.card__tile--photo img, .pdp__tile--photo img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  filter: brightness(var(--img-brightness));
+}
+.card__tile--photo span, .pdp__tile--photo span { padding: 18px; }
+
+.card__brand { font-size: 0.75rem; color: var(--text-faint); letter-spacing: 0.06em; text-transform: uppercase; }
+.card__title { font-size: 0.9375rem; margin: 2px 0 4px; font-weight: 500; }
+.card__price { font-size: 0.9375rem; }
+.card__was { color: var(--text-faint); text-decoration: line-through; margin-left: 6px; font-size: 0.8125rem; }
+.card__avail { font-size: 0.8125rem; margin-top: 3px; }
+.card--sold .card__tile { opacity: 0.55; }
+
+/* ----------------------------------------------------------------- pdp ---- */
+
+.pdp { display: grid; gap: 28px; }
+
+@media (min-width: 900px) {
+  .pdp { grid-template-columns: minmax(0, 1fr) 23rem; align-items: start; }
+  .pdp__rail { grid-column: 1 / -1; }
+}
+
+.pdp__tile {
+  aspect-ratio: 3 / 4; max-height: 32rem;
+  border-radius: var(--radius); border: 1px solid var(--border);
+  display: grid; place-items: center; padding: 32px; text-align: center;
+  overflow: hidden; position: relative;
+  background: hsl(var(--tile-h, 35) var(--tile-s) var(--tile-l));
+}
+.pdp__tile span { font-size: 1rem; color: var(--tile-ink); text-transform: lowercase; }
+
+.pdp__brand { font-size: 0.8125rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.1em; }
+.pdp__title { font-size: 1.35rem; margin: 4px 0 10px; }
+.pdp__price { font-size: 1.15rem; }
+.pdp__meta { color: var(--text-muted); font-size: 0.875rem; margin-top: 6px; }
+
+.block { margin-top: 22px; }
+.block__heading {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-faint); margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------------- sizes ---- */
+
+.sizes { display: flex; flex-wrap: wrap; gap: 8px; }
+.size-chip {
+  font: inherit; min-width: 52px; min-height: 44px; padding: 0 14px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  background: var(--bg); color: var(--text); cursor: pointer;
+  display: grid; place-items: center; line-height: 1.15;
+}
+.size-chip[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.size-chip small { display: block; font-size: 0.625rem; color: var(--estimated); }
+.size-chip--sold { color: var(--text-faint); border-style: dashed; }
+.size-chip--sold span { text-decoration: line-through; }
+.size-chip--sold small { color: var(--text-faint); }
+.size-hint { font-size: 0.8125rem; color: var(--text-muted); margin-top: 10px; }
+
+/* ------------------------------------------------------ confidence card ----
+   Tightened deliberately: at the original spacing this card ran to 950px, which
+   pushed the price and the action below the fold on a laptop. Everything that
+   is not a decision-critical line is now either smaller or collapsed. */
+
+.conf {
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  background: var(--surface); padding: 4px 14px;
+}
+.conf__section { padding: 11px 0; border-bottom: 1px solid var(--border); }
+.conf__section:last-of-type { border-bottom: none; }
+
+.conf__label {
+  font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-faint); margin-bottom: 5px;
+}
+
+.check { display: flex; gap: 8px; align-items: baseline; font-size: 0.9rem; margin: 0; }
+.check__mark { font-size: 0.75rem; line-height: 1.6; }
+.check__detail { font-size: 0.78rem; color: var(--text-muted); margin: 2px 0 0 20px; }
+
+.is-ok         { color: var(--confirmed); }
+.is-failed     { color: var(--failed); }
+.is-unresolved { color: var(--unresolved); }
+.is-estimated  { color: var(--estimated); }
+
+.dest-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.dest-row select { flex: 1 1 9rem; min-width: 0; }
+
+/* Inside the card the two controls are compact by design — at the page-wide
+   sizing they alone accounted for 140px of card height. */
+.conf select, .conf input[type="date"] {
+  min-height: 34px; padding: 6px 9px; font-size: 0.875rem;
+}
+
+.badge {
+  font-size: 0.65rem; padding: 2px 7px; border-radius: 999px;
+  border: 1px solid currentColor; white-space: nowrap;
+}
+
+/* Label and field share a row: the label is short enough that stacking them
+   wasted a whole line of card height. */
+.deadline {
+  display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap;
+}
+.deadline input[type="date"] { flex: 1 1 7rem; min-width: 0; }
+/* The "remembered" pill must not push the city select onto its own line. */
+.dest-row .badge { flex: none; }
+.deadline__label { font-size: 0.78rem; color: var(--text-muted); flex: none; }
+.deadline__label em { font-style: normal; color: var(--text-faint); }
+
+/* The deadline verdict belongs beside the input that caused it, not at the
+   bottom of the page next to the alternatives. */
+.deadline__verdict {
+  font-size: 0.8125rem; margin: 8px 0 0;
+  padding: 8px 10px; border-radius: var(--radius);
+  border: 1px solid currentColor;
+  display: flex; gap: 7px; align-items: baseline;
+}
+.deadline__verdict .check__mark { flex: none; }
+.deadline__verdict-action {
+  background: none; border: none; padding: 0; font: inherit; font-size: 0.8125rem;
+  color: inherit; text-decoration: underline; text-underline-offset: 3px;
+  cursor: pointer; margin-left: 4px;
+}
+
+/* --------------------------------------------------------------- price ---- */
+
+.price-row { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; padding: 1px 0; }
+.price-row--total {
+  border-top: 1px solid var(--border-strong); margin-top: 7px; padding-top: 8px;
+  font-weight: 600; font-size: 0.95rem;
+}
+.price-row__label { color: var(--text-muted); }
+.price-row--total .price-row__label { color: var(--text); }
+.price-note { font-size: 0.72rem; color: var(--text-muted); margin: 5px 0 0; line-height: 1.35; }
+.price-note--gst { color: var(--text-faint); }
+
+/* Collapsed by default — the working is available on demand without costing
+   200px of card height to everyone who never asks for it. */
+.why {
+  margin-top: 8px; font-size: 0.78rem; color: var(--text-muted);
+  border-top: 1px dashed var(--border); padding-top: 7px;
+}
+.why > summary {
+  cursor: pointer; list-style: none; color: var(--text-muted);
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.why > summary::-webkit-details-marker { display: none; }
+.why[open] > summary { margin-bottom: 6px; }
+
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 3px; }
+.steps li { font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between; gap: 10px; }
+
+/* ------------------------------------------------------------- buttons ---- */
+
+.btn {
+  font: inherit; font-size: 0.9375rem; width: 100%; min-height: 44px;
+  padding: 10px 18px; border-radius: var(--radius); cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink);
+}
+.btn:disabled {
+  background: var(--bg); color: var(--text-faint);
+  border-color: var(--border-strong); cursor: not-allowed;
+}
+.btn--secondary { background: var(--bg); color: var(--text); }
+
+/* Secondary action as a quiet link — it was a second full-height button, which
+   made the action block taller than the price breakdown above it. */
+.conf__actions { display: grid; gap: 8px; justify-items: center; }
+.conf__actions .link-btn { font-size: 0.8125rem; color: var(--text-muted); }
+
+/* ---------------------------------------------------------------- rail ---- */
+
+.rail { margin-top: 40px; padding-top: 26px; border-top: 1px solid var(--border); }
+.rail__heading { font-size: 1rem; margin-bottom: 4px; }
+.rail__sub { font-size: 0.875rem; color: var(--text-muted); margin: 0 0 18px; }
+.rail__reasons { list-style: none; padding: 0; margin: 4px 0 0; }
+.rail__reasons li { font-size: 0.75rem; color: var(--text-muted); }
+
+.empty {
+  color: var(--text-muted); font-size: 0.9375rem;
+  border: 1px dashed var(--border-strong); border-radius: var(--radius);
+  padding: 20px; max-width: var(--measure);
+}
+
+.loading { color: var(--text-faint); font-size: 0.875rem; padding: 8px 0; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}

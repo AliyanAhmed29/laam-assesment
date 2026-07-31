@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAAM — Browse</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Applied before first paint; a deferred module would flash the light theme. -->
+  <script>try{var t=localStorage.getItem("laam.theme");document.documentElement.dataset.theme=t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="/browse.html">LAAM</a>
+    <div class="header-right">
+      <span class="header-city">
+        <span id="city-label"></span>
+        <button id="change-city" type="button">Change</button>
+      </span>
+      <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <!--
+      Four filters. Style and type are independent axes rather than one crowded
+      list — unstitched is always eastern, so the combinations stay sensible.
+      `size` is the discovery-to-confidence bridge: it answers "is it in my
+      size?" before the click rather than after it.
+    -->
+    <section class="filters" aria-label="Filters">
+      <div class="filter">
+        <span class="filter__label" id="lbl-style">Style</span>
+        <div class="chips" id="filter-style" role="group" aria-labelledby="lbl-style"></div>
+      </div>
+
+      <div class="filter">
+        <span class="filter__label" id="lbl-type">Type</span>
+        <div class="chips" id="filter-type" role="group" aria-labelledby="lbl-type"></div>
+      </div>
+
+      <div class="filter">
+        <label class="filter__label" for="filter-size">My size</label>
+        <select id="filter-size"></select>
+      </div>
+
+      <div class="filter">
+        <label class="filter__label" for="filter-brand">Brand</label>
+        <select id="filter-brand"></select>
+      </div>
+
+      <p id="filter-summary" class="filter__summary" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- Single mount point. listing.js owns every write to it. -->
+    <section id="product-grid" class="grid" aria-label="Products"></section>
+    <p id="listing-empty" class="empty" hidden></p>
+  </main>
+
+  <script type="module" src="/js/theme.js"></script>
+  <script type="module" src="/js/listing.js"></script>
+</body>
+</html>
